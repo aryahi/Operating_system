@@ -1,0 +1,13 @@
+An orphan process is a computer process whose parent process has finished or terminated, though it remains running itself.
+
+In a Unix-like operating system any orphaned process will be immediately adopted by the special init system process: the 
+kernel sets the parent to init. This operation is called re-parenting and occurs automatically. Even though technically 
+the process has the "init" process as its parent, it is still called an orphan process since the process that originally 
+created it no longer exists. In other systems orphaned processes are immediately terminated by the kernel.
+
+A process can be orphaned unintentionally, such as when the parent process terminates or crashes, or a network connection 
+is disconnected. The process group mechanism in most Unix-like operating systems can be used to help protect against 
+accidental orphaning, where in coordination with the user's shell will try to terminate all the child processes with the 
+"hangup" signal (SIGHUP), rather than letting them continue to run as orphans. More precisely, as part of job control, 
+when the shell exits, because it is the "session leader" (its session id equals its process id), the corresponding login 
+session ends, and the shell sends SIGHUP to all its jobs (internal representation of process groups).
