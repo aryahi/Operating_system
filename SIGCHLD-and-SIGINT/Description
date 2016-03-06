@@ -1,0 +1,5 @@
+ SIGINT is a program interrupt signal, which is sent when an user presses Ctrl+C. 
+ SIGTERM is a termination signal, which is sent to a process to request its termination, but it can 
+ be caught and interpreted or ignored by the process.
+ 
+ 
