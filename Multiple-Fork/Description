@@ -1,0 +1,19 @@
+
+Let's say total 3 forks: First, pid = fork() is done in original process, resulting in one more process, so total is now two, 
+both continuing from the next line in your code.
+
+Then pid1 = fork() is done on both of these, resulting in two more child processes, so total is now 4, each again continuing 
+to next line (first if).
+
+Then all three processes process the two if-else statements (assuming no fork errors), each process printing two lines. 
+So four processes times 2 lines is 8 lines. Which you are getting.
+
+So the processes are:
+
+    original
+    first generation older child, from 1st fork statement
+    first generation younger child, from 2nd fork statement by the original
+    2nd generation child, from 2nd fork statement by the older first generation child
+
+If you want to understand the output, step through the code in your mind for all of these four processes. 
+It might also help if you print out current pid in each print statement, in addition to what you print now.
