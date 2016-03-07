@@ -1,0 +1,4 @@
+W O R S T - F I T
+ 
+Worst-fit memory allocation is opposite to best-fit. 
+It allocates free available block to the new job and it is not the best choice for an actual system.
