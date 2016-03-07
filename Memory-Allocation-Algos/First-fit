@@ -1,0 +1,10 @@
+First Fit: 
+
+You measure/look at each person's size and then go sequentially through all the seats looking for the 
+first seat that the person can sit in. You always start from the first seat as you don't want to take 
+any chances by missing a valid seat, You then allocate them that seat. You don't care if the seat is a 
+bit larger than them since you just want to allocate a seat that they will be comfortable in, even though 
+you are wasting some space. In case there is no seat of the right size available (there may be a few 
+small seats available but the person is extra large), you simply wait till someone seated in an appropriate 
+seat gets up and leaves and then you give that seat to the person waiting, or you look at the next person
+in line and see if they have a seat available for them.
