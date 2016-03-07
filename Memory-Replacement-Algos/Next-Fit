@@ -1,0 +1,6 @@
+Next Fit: 
+You do the same thing as above, but after allotting a seat to someone, you start your search for 
+the next seat from the last seat you allotted rather than the start. This saves you from looking at
+seats you already allotted at the beginning and forces you to look at the back seats sooner than before,
+thus you are able to do a faster job at allotting seats to various people. You just have to keep in mind 
+the last seat you allotted to a person.
