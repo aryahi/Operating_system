@@ -1,0 +1,14 @@
+First-in, first-out
+
+The simplest page-replacement algorithm is a FIFO algorithm. The first-in, first-out (FIFO) page replacement algorithm is a 
+low-overhead algorithm that requires little bookkeeping on the part of the operating system. The idea is obvious from the
+name – the operating system keeps track of all the pages in memory in a queue, with the most recent arrival at the back, 
+and the oldest arrival in front. When a page needs to be replaced, the page at the front of the queue (the oldest page) is
+selected. While FIFO is cheap and intuitive, it performs poorly in practical application. Thus, it is rarely used in its 
+unmodified form. This algorithm experiences Bélády's anomaly.
+
+FIFO page replacement algorithm is used by the VAX/VMS operating system, with some modifications.[5] Partial second chance 
+is provided by skipping a limited number of entries with valid translation table references,[6] and additionally, pages are 
+displaced from process working set to a systemwide pool from which they can be recovered if not already re-used.
+
+FIFO is a conservative algorithm, so it is \dfrac{k}{k-h+1}-competitive.
